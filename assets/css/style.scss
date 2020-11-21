@@ -156,12 +156,27 @@ header {
         border: none;
         margin: 1.5rem 0;
         transition: all .5s ease;
+
+        .img-section {
+            svg {
+                width: 60%;
+                height: fit-content;
+                transform-origin: center;
+                transform-box: fill-box;
+            }
+        }
     
         &:hover {
             background: #f1f1f1;
             box-shadow:  20px 20px 39px #d9d9d9, 
                     -20px -20px 39px #f1f1f1;
             transform: translateY(-20px);
+
+            .img-section {
+                svg {
+                    animation: rotate 4s linear infinite;
+                }
+            }
         }
         p {
             font-size: 18px;
@@ -169,6 +184,15 @@ header {
             font-style: normal;
             color: #6e7180;
         }
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
     }
 }
 

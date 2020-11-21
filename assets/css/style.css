@@ -173,6 +173,16 @@ header .scrolled {
   transition: all .5s ease;
 }
 
+.card-section .card .img-section svg {
+  width: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
 .card-section .card:hover {
   background: #f1f1f1;
   -webkit-box-shadow: 20px 20px 39px #d9d9d9,  -20px -20px 39px #f1f1f1;
@@ -181,11 +191,38 @@ header .scrolled {
           transform: translateY(-20px);
 }
 
+.card-section .card:hover .img-section svg {
+  -webkit-animation: rotate 4s linear infinite;
+          animation: rotate 4s linear infinite;
+}
+
 .card-section .card p {
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
   color: #6e7180;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
 section .img-content {
