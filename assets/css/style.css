@@ -270,30 +270,6 @@ section .wave-animation svg path {
           animation: pathAnim 7s;
 }
 
-@-webkit-keyframes pathAnim {
-  0% {
-    d: path("M0,192 C220,100,400,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
-  }
-  50% {
-    d: path("M0,192 C220,290,400,290,660,192 C880,100,1100,100,1320,192 L1320 500 L0 500");
-  }
-  100% {
-    d: path("M0,192 C220,100,400,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
-  }
-}
-
-@keyframes pathAnim {
-  0% {
-    d: path("M0,192 C220,100,400,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
-  }
-  50% {
-    d: path("M0,192 C220,290,400,290,660,192 C880,100,1100,100,1320,192 L1320 500 L0 500");
-  }
-  100% {
-    d: path("M0,192 C220,100,400,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
-  }
-}
-
 footer {
   background-color: var(--dark-color);
 }
@@ -426,6 +402,12 @@ select.form-control:active {
 }
 
 @media screen and (max-width: 500px) {
+  #home {
+    height: calc(80vh - 20px);
+  }
+  #home .home-section {
+    height: 95%;
+  }
   section .img-content .img-div {
     width: -webkit-fit-content;
     width: -moz-fit-content;
