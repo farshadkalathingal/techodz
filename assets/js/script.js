@@ -1,5 +1,16 @@
-// const logo = document.querySelectorAll('#logo path');
 
-// for (let i = 0; i<logo.length; i++) {
-//     console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
-// }
+jQuery(function($) {
+	
+    'use strict';
+    Window_Scroll();
+});
+
+var Window_Scroll = function() {
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > 20 ) {
+            $('nav').addClass('scrolled');
+        } else {
+            $('nav').removeClass('scrolled');
+        }
+    });
+};

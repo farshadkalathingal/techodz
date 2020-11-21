@@ -40,6 +40,12 @@ p, label, small {
   color: #fff;
 }
 
+header .navbar {
+  padding: 1.3rem 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
 header .navbar .navbar-nav .active::after {
   content: '';
   width: 2px;
@@ -48,6 +54,14 @@ header .navbar .navbar-nav .active::after {
   display: block;
   margin: 0 auto;
   margin-top: -.3rem;
+}
+
+header .scrolled {
+  padding: .8rem 0;
+  background-color: var(--primary-color);
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 #home {
@@ -180,6 +194,10 @@ section .img-content .img-desc h5 {
   color: #fff;
 }
 
+section .img-content .img-desc .media i {
+  font-size: 2rem;
+}
+
 footer {
   background-color: var(--dark-color);
 }
@@ -250,6 +268,27 @@ footer a {
 footer a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+/* remove outline */
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus,
+.btn:focus,
+.btn:active,
+select.form-control:focus,
+select.form-control:active {
+  -webkit-box-shadow: inset 0 -1px 0 #ddd;
+          box-shadow: inset 0 -1px 0 #ddd;
 }
 
 @media screen and (max-width: 500px) {
