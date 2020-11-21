@@ -42,6 +42,18 @@ p, label, small {
 }
 
 .btn-color {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
     border-radius: 25px;
     background-image: linear-gradient(to right, #0250c5 0%, #d43f8d 100%);
     padding: .7rem 2rem;
@@ -49,6 +61,11 @@ p, label, small {
     font-size: 18px;
     color: #fff;
     border: none;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 header {
@@ -385,6 +402,7 @@ select.form-control:active {
         height: calc(80vh - 20px);
         .home-section {
             height: 95%;
+            border-bottom-right-radius: 80px;
         }
     }
     section {
