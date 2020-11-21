@@ -32,7 +32,7 @@ p, label, small {
 
 .btn-color {
     border-radius: 25px;
-    background: linear-gradient(var(--seconday-color), var(--primary-pink));
+    background-image: linear-gradient(to right, #0250c5 0%, #d43f8d 100%);
     padding: .7rem 2rem;
     font-size: 18px;
     color: #fff;
@@ -58,7 +58,14 @@ header {
 
 #home {
     height: 100vh;
-    background-color: var(--primary-color);
+    .home-section {
+        height: 95vh;
+        background-color: rgb(156, 91, 91);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") ;
+        background-position: center;
+        background-size: cover;
+        border-bottom-right-radius: 120px;
+    }
 }
 
 #logo {
