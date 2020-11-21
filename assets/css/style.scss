@@ -79,6 +79,9 @@ header {
             font-size: 1.8em;
         }
         .navbar-nav {
+            .nav-link {
+                text-transform: uppercase;
+            }
             .active {
                 &::after {
                     content: '';
@@ -102,7 +105,7 @@ header {
 }
 
 #home {
-    height: calc(100vh);
+    height: 100vh;
     .home-section {
         height: 95vh;
         background-color: rgb(156, 91, 91);
@@ -264,7 +267,7 @@ section {
 }
 
 footer {
-    background-color: var(--dark-color);
+    background-color: var(--first-color-darker);
 
     h4 {
         color: #fff;
@@ -286,7 +289,7 @@ footer {
             width: 40px;
             height: 4px;
             display: block;
-            background-color: var(--primary-pink);
+            background-color: var(--first-color);
             transform: translateY(9px);
         }
     }
@@ -399,7 +402,7 @@ select.form-control:active {
 
 @media screen and (max-width: 500px) {
     #home {
-        height: calc(80vh - 20px);
+        height: 80vh;
         .home-section {
             height: 95%;
             border-bottom-right-radius: 80px;
