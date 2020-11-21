@@ -5,6 +5,8 @@ jQuery(function($) {
     Window_Scroll();
 });
 
+
+
 var Window_Scroll = function() {
     $(window).scroll(function() {
         if ( $(window).scrollTop() > 20 ) {
