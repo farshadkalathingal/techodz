@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #64766A;
+    --seconday-color: #94A7AE;
+    --primary-pink: #C0A9BD;
+
+    --text-color: ;
+    --background-color: #f4f2f3;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Noto Sans', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--heading-font);
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    font-family: var(--heading-font);
+}
+
+p, label, small {
+    font-family: var(--paragraph-font);
+}
+
+.btn-color {
+    border-radius: 25px;
+    background: linear-gradient(var(--seconday-color), var(--primary-pink));
+    padding: .7rem 2rem;
+    font-size: 18px;
+    color: #fff;
+}
+
+header {
+    .navbar {
+        .navbar-nav {
+            .active {
+                &::after {
+                    content: '';
+                    width: 2px;
+                    height: 2px;
+                    background-color: #fff;
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: -.3rem;
+                }
+            }
+        }
+    }
+}
+
+#home {
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+#logo {
+    width: 100%;
+    path {
+        &:nth-child(2) {
+            stroke-dasharray: 356;
+            stroke-dashoffset: 356;
+            animation: logo-letter 2s ease forwards;
+        }
+        &:nth-child(3) {
+            stroke-dasharray: 411;
+            stroke-dashoffset: 411;
+            animation: logo-letter 2s ease forwards .3s;
+        }
+        &:nth-child(4) {
+            stroke-dasharray: 477;
+            stroke-dashoffset: 477;
+            animation: logo-letter 2s ease forwards .6s;
+        }
+        &:nth-child(5) {
+            stroke-dasharray: 400;
+            stroke-dashoffset: 400;
+            animation: logo-letter 2s ease forwards .9s;
+        }
+        &:nth-child(6) {
+            stroke-dasharray: 340;
+            stroke-dashoffset: 340;
+            animation: logo-letter 2s ease forwards 1.2s;
+        }
+        &:nth-child(7) {
+            stroke-dasharray: 348;
+            stroke-dashoffset: 348;
+            animation: logo-letter 2s ease forwards 1.5s;
+        }
+        &:nth-child(8) {
+            stroke-dasharray: 411;
+            stroke-dashoffset: 411;
+            animation: logo-letter 2s ease forwards 1.8s;
+        }
+    }
+}
+
+@keyframes logo-letter {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+section {
+    height: 100vh;
+}
+
