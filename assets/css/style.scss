@@ -138,6 +138,11 @@ header {
             stroke-dashoffset: 411;
             animation: logo-letter 2s ease forwards 1.8s;
         }
+        &:nth-child(9) {
+            stroke-dasharray: 411;
+            stroke-dashoffset: 411;
+            animation: logo-letter 2s ease forwards 2.1s;
+        }
     }
 }
 
@@ -158,11 +163,13 @@ header {
         transition: all .5s ease;
 
         .img-section {
+            padding-bottom: 1rem;
             svg {
-                width: 60%;
+                width: 50%;
                 height: fit-content;
                 transform-origin: center;
                 transform-box: fill-box;
+               
             }
         }
     
@@ -174,7 +181,7 @@ header {
 
             .img-section {
                 svg {
-                    animation: rotate 4s linear infinite;
+                    animation: rotate 5s linear infinite;
                 }
             }
         }
@@ -227,6 +234,16 @@ section {
         }
     }
     
+}
+
+section {
+    .wave-animation {
+        svg {
+            path {
+                animation: pathAnim 7s;
+            }
+        }
+    }
 }
 
 footer {

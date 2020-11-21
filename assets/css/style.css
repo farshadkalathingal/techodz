@@ -150,6 +150,13 @@ header .scrolled {
           animation: logo-letter 2s ease forwards 1.8s;
 }
 
+#logo path:nth-child(9) {
+  stroke-dasharray: 411;
+  stroke-dashoffset: 411;
+  -webkit-animation: logo-letter 2s ease forwards 2.1s;
+          animation: logo-letter 2s ease forwards 2.1s;
+}
+
 @-webkit-keyframes logo-letter {
   to {
     stroke-dashoffset: 0;
@@ -173,8 +180,12 @@ header .scrolled {
   transition: all .5s ease;
 }
 
+.card-section .card .img-section {
+  padding-bottom: 1rem;
+}
+
 .card-section .card .img-section svg {
-  width: 60%;
+  width: 50%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -192,8 +203,8 @@ header .scrolled {
 }
 
 .card-section .card:hover .img-section svg {
-  -webkit-animation: rotate 4s linear infinite;
-          animation: rotate 4s linear infinite;
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
 }
 
 .card-section .card p {
@@ -252,6 +263,35 @@ section .img-content .img-desc h5 {
 
 section .img-content .img-desc .media i {
   font-size: 2rem;
+}
+
+section .wave-animation svg path {
+  -webkit-animation: pathAnim 7s;
+          animation: pathAnim 7s;
+}
+
+@-webkit-keyframes pathAnim {
+  0% {
+    d: path("M0,192 C220,100,400,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
+  }
+  50% {
+    d: path("M0,192 C220,290,400,290,660,192 C880,100,1100,100,1320,192 L1320 500 L0 500");
+  }
+  100% {
+    d: path("M0,192 C220,100,400,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
+  }
+}
+
+@keyframes pathAnim {
+  0% {
+    d: path("M0,192 C220,100,400,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
+  }
+  50% {
+    d: path("M0,192 C220,290,400,290,660,192 C880,100,1100,100,1320,192 L1320 500 L0 500");
+  }
+  100% {
+    d: path("M0,192 C220,100,400,100,660,192 C880,290,1100,290,1320,192 L1320 500 L0 500");
+  }
 }
 
 footer {
