@@ -4,6 +4,7 @@
     --primary-color: #64766A;
     --seconday-color: #94A7AE;
     --primary-pink: #C0A9BD;
+    --dark-color: #2a4149;
 
     --text-color: ;
     --background-color: #f4f2f3;
@@ -120,3 +121,67 @@ section {
     height: 100vh;
 }
 
+footer {
+    background-color: var(--dark-color);
+
+    h4 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+
+        &::before {
+            content: '';
+            width: 150px;
+            height: 2px;
+            display: block;
+            background-color: #fff;
+            transform: translateY(30px);
+        }
+
+        &::after {
+            content: '';
+            width: 40px;
+            height: 4px;
+            display: block;
+            background-color: var(--primary-pink);
+            transform: translateY(9px);
+        }
+    }
+
+    p {
+        color: #fff;
+        font-size: .9rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+    .quick-links {
+        padding-inline-start: 0;
+        li {
+            margin: .2rem 0;
+            a {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .social-links {
+        padding-inline-start: 0;
+
+        li {
+            display: inline;
+            margin: .2rem .5rem;
+        }
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.837);
+
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
